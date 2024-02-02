@@ -14,7 +14,7 @@ const Home = () => {
               <span>HELLO EVERYBODY! I AM</span>  
               <h1>ANUSHREE GAUTAM</h1>
               <div>
-                <Email fontSize="medium" sx={{ color: "black" }} /><span> : anushreegautam320@gmail.com</span> 
+                <Email fontSize="small" sx={{ color: "black" }} /><span className="email-address"> : anushreegautam320@gmail.com</span> 
               </div>
               <br/>
               <h3>SOFTWARE DEVELPOER</h3>

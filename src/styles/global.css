@@ -106,6 +106,10 @@ strong {
   padding: 0px;  
 }
 
+.email-address {
+  font-size: 1rem;
+}
+
 /* Small devices such as large phones */
 @media only screen and (min-width: 300px) {
   .main-background {
@@ -130,6 +134,9 @@ strong {
     margin: 20vh 10vw;
     position: static;
     box-shadow: 1px 1px 20px #e0e0e0;
+  }
+  .email-address {
+    font-size: 0.75rem;
   }
   #about {
     min-height: 800px;
@@ -203,6 +210,9 @@ strong {
       position: static;
       box-shadow: 1px 1px 20px #e0e0e0;
     }
+    .email-address {
+      font-size: 1rem;
+    }
     #about {
       min-height: 800px;
     }
@@ -274,6 +284,9 @@ strong {
     margin: 20vh 10vw;
     box-shadow: 1px 1px 20px #e0e0e0;
   }
+  .email-address {
+    font-size: 1rem;
+  }
   .nav-container {
     display: inline-block;
     width: 100vw;  
@@ -333,6 +346,9 @@ strong {
     left: 0;
     width: 100vw;
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%) 
+  }
+  .email-address {
+    font-size: 1rem;
   }
   .about-container {
     display: flex;
@@ -405,11 +421,12 @@ strong {
     width: 100vw;
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%) 
   }
-
+  .email-address {
+    font-size: 1rem;
+  }
   #about {
     min-height: 1000px;
   }
-
   .about-container {
   display: flex;
   flex-direction: row;
