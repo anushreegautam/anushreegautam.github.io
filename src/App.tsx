@@ -13,9 +13,9 @@ const App = () => {
     const elementY = elemRect?.y as number
     const scrollY = window.scrollY
     if(scrollY > elementY) {
-      document.getElementById('navigation-bar')?.setAttribute('class', 'fixed-nav-container')
+      document.getElementById('navigation-container')?.setAttribute('class', 'fixed-nav-container')
     } else {
-      document.getElementById('navigation-bar')?.setAttribute('class', 'nav-container')
+      document.getElementById('navigation-container')?.setAttribute('class', 'nav-container')
     }
   })
   }, [])

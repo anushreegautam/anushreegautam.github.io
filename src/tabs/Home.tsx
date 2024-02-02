@@ -9,7 +9,7 @@ const Home = () => {
         <Navigation />  
         <div className="about-container" id="about-conatiner-id">
           <img className="profile-photo" id="profile-photo-id" alt="profile-picture" src="../profile.jpg" />  
-          <div style={{ display: "flex", flexDirection: "column"  }}>
+          <div className="flex-container-column">
             <div>
               <span>HELLO EVERYBODY! I AM</span>  
               <h1>ANUSHREE GAUTAM</h1>

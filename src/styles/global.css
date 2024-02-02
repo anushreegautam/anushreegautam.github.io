@@ -2,6 +2,11 @@
    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; 
 }
 
+a {
+  text-decoration: none;
+  color: white
+}
+
 .header-container {
   position: fixed;
   top: 0;
@@ -21,18 +26,11 @@
   z-index: 1;
 }
 
-.navigation-bar { 
-  float: right;  
-  display: inline-flex;
-  flex-direction: row-reverse;
-  min-width: 2vh;
-  padding: 0.75rem;
-}
-
-.profile-photo {
-  border-radius: 2%;
-  width: 350px;
-  height: 450px;
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  padding: 4vh 2vw;
+  align-items: center;
 }
 
 .content {
@@ -83,10 +81,9 @@ strong {
   padding-top: 0.5rem;
 }
 
-.flex-container-row {
+.flex-container-column {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
 }
 
 .experience-container {
@@ -110,25 +107,37 @@ strong {
 }
 
 /* Small devices such as large phones */
-@media only screen and (max-width: 680px) {
+@media only screen and (min-width: 300px) {
   .main-background {
     display: none;
+  }
+  .section-menu {
+    width: 50vw;
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    float: right;
   }
   .about-container {
     display: flex;
     flex-direction: column;
     background-color:white;
     align-items: center;
-    gap: 5rem;
-    padding: 5rem;
+    gap: 2rem;
+    padding: 2rem;
     border-radius: 2%;
     max-width: 90vw;
-    margin: 10vh 10vw;
+    margin: 20vh 10vw;
     position: static;
     box-shadow: 1px 1px 20px #e0e0e0;
   }
   #about {
     min-height: 800px;
+  }
+  .profile-photo {
+    border-radius: 2%;
+    width: 225px;
+    height: 300px;
   }
   .nav-container {
     display: inline-block;
@@ -137,26 +146,35 @@ strong {
     top: 0;
     background-color: black;
   }
-  .navigation-bar a {
+  .navigation-bar-row-menu {
+    display: none;
+  }
+  .navigation-bar-column-menu { 
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navigation-bar-column-menu a {
     color: white;  
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
-    font-size: 0.5rem;  
+    font-size: 0.75rem;
+    padding: 3vh 3vw;
+    border: 1px solid dimgray;
     &:hover {
       color: #5d5a5a;
     } 
   }
-  
   .resume-label {
-      display: inline-block;  
-      color: white; 
-      font-weight: 600;
-      padding: 1.25rem 1.75rem;
-      font-size: 0.5rem; 
-      text-decoration: none;
-      &:hover {
-        color: #5d5a5a;
-      }
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 0.75rem; 
+    &:hover {
+      color: #5d5a5a;
+    }
   }
 }
 
@@ -165,9 +183,13 @@ strong {
     .main-background {
       display: none;
     }
-    .main-background {
-        display: none;
-      }
+    .section-menu {
+      width: 50vw;
+      display: flex;
+      flex-direction: row-reverse;
+      color: white;
+      float: right;
+    }
     .about-container {
       display: flex;
       flex-direction: column;
@@ -177,7 +199,7 @@ strong {
       padding: 5rem;
       border-radius: 2%;
       max-width: 90vw;
-      margin: 10vh 10vw;
+      margin: 20vh 10vw;
       position: static;
       box-shadow: 1px 1px 20px #e0e0e0;
     }
@@ -191,26 +213,42 @@ strong {
         top: 0;
         background-color: black;
       }
-      .navigation-bar a {
-        color: white;  
-        font-weight: 600;
-        text-decoration: none;
-        font-size: 0.5rem;  
-        &:hover {
-          color: #5d5a5a;
-        } 
-      }
-      .resume-label {
-          display: inline-block;  
-          color: white; 
-          font-weight: 600;
-          padding: 1.25rem 1.75rem;
-          font-size: 0.5rem; 
-          text-decoration: none;
-          &:hover {
-            color: #5d5a5a;
-          }
-      }    
+    .navigation-bar-row-menu {
+      display: none;
+    }  
+    .navigation-bar-column-menu { 
+      width: 100vw; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4vw;
+    }   
+    .navigation-bar-column-menu a {
+      color: white;  
+      font-weight: 400;
+      text-decoration: none;
+      font-size: 1rem; 
+      padding: 3vh 3vw;
+      border: 1px solid dimgray;
+      &:hover {
+        color: #5d5a5a;
+      } 
+    }
+    .resume-label {
+      width: 50vw;
+    display: flex;
+    flex-direction: row; 
+    font-weight: 400;
+    font-size: 1rem; 
+    &:hover {
+      color: #5d5a5a;
+    }
+    }
+    .profile-photo {
+      border-radius: 2%;
+      width: 275px;
+      height: 350px;
+    }    
   }
 
 /* Medium devices such as tablets */
@@ -221,6 +259,9 @@ strong {
   .main-background {
     display: none;
   }
+  .section-menu {
+    display: none !important;
+  }
   .about-container {
     display: flex;
     flex-direction: column;
@@ -230,7 +271,7 @@ strong {
     gap: 5rem;
     padding: 5rem;
     max-width: 90vw;
-    margin: 10vh 10vw;
+    margin: 20vh 10vw;
     box-shadow: 1px 1px 20px #e0e0e0;
   }
   .nav-container {
@@ -240,25 +281,39 @@ strong {
     top: 0;
     background-color: black;
   }
-  .navigation-bar a {
+  .navigation-bar-column-menu {
+    display: none;
+  }
+  .navigation-bar-row-menu {  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50vw;
+    gap: 4vw;
+  }
+  .navigation-bar-row-menu a {
     color: white;  
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
-    font-size: 0.5rem;  
+    font-size: 1rem;
     &:hover {
       color: #5d5a5a;
     } 
   }
   .resume-label {
-      display: inline-block;  
-      color: white; 
-      font-weight: 600;
-      padding: 1.25rem 1.75rem;
-      font-size: 0.5rem; 
-      text-decoration: none;
-      &:hover {
-        color: #5d5a5a;
-      }
+    width: 50vw;
+    display: flex;
+    flex-direction: row; 
+    font-weight: 400;
+    font-size: 1rem; 
+    &:hover {
+      color: #5d5a5a;
+    }
+  }
+  .profile-photo {
+    border-radius: 2%;
+    width: 350px;
+    height: 450px;
   }
 }
 
@@ -266,6 +321,9 @@ strong {
 @media only screen and (min-width: 1024px) {
   #about {
     min-height: 1200px;
+  }
+  .section-menu {
+    display: none !important;
   }
   .main-background {
     display: block;
@@ -297,30 +355,47 @@ strong {
     top: 0;
     background-color: transparent;
   }
-  .navigation-bar a {
+  .navigation-bar-column-menu {
+    display: none;
+  }
+  .navigation-bar-row-menu { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50vw;
+    gap: 4vw;
+  }
+  .navigation-bar-row-menu a {
     color: white;  
     font-weight: 600;
     text-decoration: none;
-    font-size: 1rem;  
+    font-size: 1rem;
     &:hover {
       color: #5d5a5a;
     } 
   }
   .resume-label {
-      display: inline-block;  
-      color: white; 
-      font-weight: 600;
-      padding: 1.25rem 1.75rem;
-      font-size: 1rem; 
-      text-decoration: none;
-      &:hover {
-        color: #5d5a5a;
-      }
+    width: 50vw;
+    display: flex;
+    flex-direction: row; 
+    font-weight: 600;
+    font-size: 1rem; 
+    &:hover {
+      color: #5d5a5a;
+    }
+  }
+  .profile-photo {
+    border-radius: 2%;
+    width: 350px;
+    height: 450px;
   }
 }
 
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (min-width: 1280px) {
+  .section-menu {
+    display: none !important;
+  }
   .main-background {
     display: block;
     height: 90vh;
@@ -356,24 +431,38 @@ strong {
     top: 0;
     background-color: transparent;
   }
-  .navigation-bar a {
+  .navigation-bar-column-menu {
+    display: none;
+  }
+  .navigation-bar-row-menu { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50vw;
+    gap: 4vw;
+  }
+  .navigation-bar-row-menu a {
     color: white;  
     font-weight: 600;
     text-decoration: none;
-    font-size: 1rem;  
+    font-size: 1rem; 
     &:hover {
       color: #5d5a5a;
     } 
   }
   .resume-label {
-      display: inline-block;  
-      color: white; 
-      font-weight: 600;
-      padding: 1.25rem 1.75rem;
-      font-size: 1rem; 
-      text-decoration: none;
-      &:hover {
-        color: #5d5a5a;
-      }
+    width: 50vw;
+    display: flex;
+    flex-direction: row; 
+    font-weight: 600;
+    font-size: 1rem; 
+    &:hover {
+      color: #5d5a5a;
+    }
+  }
+  .profile-photo {
+    border-radius: 2%;
+    width: 350px;
+    height: 450px;
   }
 }

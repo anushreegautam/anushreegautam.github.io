@@ -1,21 +1,23 @@
-import React from 'react'
-import { Nav} from 'react-bootstrap'
-import { Download } from '@mui/icons-material' 
+import React, { useState } from 'react'
+import { Download, MoreVert } from '@mui/icons-material' 
+import NavBar from './NavBar'
 
 const Navigation = ({ className }: { className?: string}) => {
-    const containerClass = className ? className : 'nav-container'
+  const containerClass = className ? className : 'nav-container'
+  const [showDropdown, setShowDropdown] = useState(false)
+
+  const handleClick = () => setShowDropdown(prevState => !prevState)
+
   return (
-    <div className={`${containerClass}`} id="navigation-bar"> 
-    <a href="anushree_gautam_resume.pdf" className="resume-label" download="anushree_gautam" >Resume <Download fontSize="small" /></a>
-     <div className="navigation-bar">
-    <Nav id="portfolio-nav-bar" defaultActiveKey="about" className="flex-row expand">
-    <Nav.Link eventKey="home" href="#about">About</Nav.Link>
-    <Nav.Link eventKey="experience" href='#experience'>Experience</Nav.Link>
-    <Nav.Link eventKey="education" href="#education">Education</Nav.Link>
-    <Nav.Link eventKey="skills" href='#skill'>Skills</Nav.Link>
-    <Nav.Link eventKey="projects" href="#projects">Projects</Nav.Link>
-    </Nav>
-  </div>    
+    <div className={`${containerClass}`} id="navigation-container"> 
+    <div className="navigation-bar">
+      <div className="resume-label">
+        <a href="anushree_gautam_resume.pdf"  download="anushree_gautam" >Resume <Download className="download-icon" fontSize="small" /></a>
+      </div>  
+      <a className="section-menu" onClick={handleClick} ><MoreVert fontSize="small" /></a>
+      <NavBar className="navigation-bar-row-menu" />
+    </div> 
+    { showDropdown && <NavBar className="navigation-bar-column-menu" handleClick={handleClick} /> }  
   </div>
   )  
 }
