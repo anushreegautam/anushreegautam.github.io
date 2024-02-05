@@ -179,7 +179,8 @@ strong {
     flex-direction: row;
     font-weight: 400;
     font-size: 0.75rem; 
-    &:hover {
+    
+    a:hover {
       color: #5d5a5a;
     }
   }
@@ -202,7 +203,7 @@ strong {
       flex-direction: column;
       background-color:white;
       align-items: center;
-      gap: 5rem;
+      gap: 2rem;
       padding: 5rem;
       border-radius: 2%;
       max-width: 90vw;
@@ -250,7 +251,8 @@ strong {
     flex-direction: row; 
     font-weight: 400;
     font-size: 1rem; 
-    &:hover {
+
+    a:hover {
       color: #5d5a5a;
     }
     }
@@ -278,7 +280,7 @@ strong {
     background-color:white;
     align-items: center;
     border-radius: 2%;
-    gap: 5rem;
+    gap: 3rem;
     padding: 5rem;
     max-width: 90vw;
     margin: 20vh 10vw;
@@ -319,7 +321,8 @@ strong {
     flex-direction: row; 
     font-weight: 400;
     font-size: 1rem; 
-    &:hover {
+
+    a:hover {
       color: #5d5a5a;
     }
   }
@@ -356,7 +359,7 @@ strong {
     background-color:white;
     align-items: center;
     border-radius: 2%;
-    gap: 5rem;
+    gap: 3rem;
     position: absolute;
     top: 15vh; 
     padding: 5rem;
@@ -396,7 +399,8 @@ strong {
     flex-direction: row; 
     font-weight: 600;
     font-size: 1rem; 
-    &:hover {
+
+    a:hover {
       color: #5d5a5a;
     }
   }
@@ -419,7 +423,7 @@ strong {
     top: 0;
     left: 0;
     width: 100vw;
-    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%) 
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%)
   }
   .email-address {
     font-size: 1rem;
@@ -433,7 +437,7 @@ strong {
   background-color:white;
   align-items: center;
   border-radius: 2%;
-  gap: 5rem;
+  gap: 3rem;
   position: absolute;
   top: 15vh; 
   padding: 5rem;
@@ -473,7 +477,8 @@ strong {
     flex-direction: row; 
     font-weight: 600;
     font-size: 1rem; 
-    &:hover {
+    
+    a:hover {
       color: #5d5a5a;
     }
   }

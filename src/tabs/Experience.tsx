@@ -13,8 +13,9 @@ const Experience = () => {
         </div>
         <h5>Medidata, Dassault Systèmes</h5>
         <ul>
-          <li>Working on building and managing development of a microservice under Clinical Trial Management System Domain.</li>  
-          <li>Responsible for developing new functionalities, dealing with frontend architecture related issues and maintaining code quality.</li>
+          <li>Working on building and managing development of a new microservice under Clinical Trial Management System Domain.</li>  
+          <li>Reviewed UX designs to ascertain their feasibility for implementation.</li>
+          <li>Conducted discussion with the team to define REST API endpoints.</li>
         </ul>
         <br/>
         <div>
@@ -23,9 +24,9 @@ const Experience = () => {
         </div>
         <h5>Medidata, Dassault Systèmes</h5>
         <ul>
-         <li>Worked on building a configuration management microservice for managing settings required for conducting clinical trials.</li>  
+         <li>Worked on building a configuration management microservice for settings required for conducting clinical trials.</li>  
          <li>Delivered production fixes for Urgent software release.</li>
-         <li>Conducted research to identify open-source libraries for integration into our applications.</li>
+         <li>Researched open-source libraries for integration into our applications.</li>
          <li>Translated the Figma designs into efficient user interfaces and optimized the code base by creating reusable components using the Storybook tool.</li>
         </ul>
       </div>
