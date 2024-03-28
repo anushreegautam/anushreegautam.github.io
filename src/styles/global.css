@@ -110,6 +110,12 @@ strong {
   font-size: 1rem;
 }
 
+.todo-app-gif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Small devices such as large phones */
 @media only screen and (min-width: 300px) {
   .main-background {
@@ -183,6 +189,10 @@ strong {
     a:hover {
       color: #5d5a5a;
     }
+  }
+
+  .todo-app-gif img {
+    width: 80vw;
   }
 }
 
@@ -261,6 +271,10 @@ strong {
       width: 275px;
       height: 350px;
     }    
+
+    .todo-app-gif img {
+      width: 80vw;
+    }
   }
 
 /* Medium devices such as tablets */
@@ -330,6 +344,11 @@ strong {
     border-radius: 2%;
     width: 350px;
     height: 450px;
+  }
+
+  .todo-app-gif img {
+    height: 40%;
+    width: 40%;
   }
 }
 
@@ -409,6 +428,11 @@ strong {
     width: 350px;
     height: 450px;
   }
+
+  .todo-app-gif img {
+    height: 50%;
+    width: 50%;
+  }
 }
 
 /* Largest devices such as desktops (1280px and up) */
@@ -486,5 +510,10 @@ strong {
     border-radius: 2%;
     width: 350px;
     height: 450px;
+  }
+
+  .todo-app-gif img {
+    height: 50%;
+    width: 50%;
   }
 }
