@@ -26,8 +26,8 @@ const Projects = () => {
           </div>
           <br/>
           <ul>
-            <li>TODO is a responsive single page application which allow user to create an account, add, update, reorder and delete tasks.</li>
-            <li>The application is built using MERN stack, webpack, babel and json web tokens are used for user authentication and password reset.</li>
+            <li>TODO is a responsive single page application which allows users to create an account, reset password through email and add, update, reorder and delete tasks.</li>
+            <li>The application is built using MERN stack, webpack, babel and json web tokens are used for user authentication and verifying link for password reset.</li>
           </ul>
         </div>
       </div>

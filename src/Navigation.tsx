@@ -12,7 +12,7 @@ const Navigation = ({ className }: { className?: string}) => {
     <div className={`${containerClass}`} id="navigation-container"> 
     <div className="navigation-bar">
       <div className="resume-label">
-        <a href="anushree_gautam_resume.pdf"  download="anushree_gautam" >Resume <Download className="download-icon" fontSize="small" /></a>
+        <a href="https://drive.google.com/file/d/1semrwR7UwNuY5-ffkon_9ugfGPyxvHrK/view?usp=sharing" >Resume <Download className="download-icon" fontSize="small" /></a>
       </div>  
       <a className="section-menu" onClick={handleClick} ><MoreVert fontSize="small" /></a>
       <NavBar className="navigation-bar-row-menu" />
