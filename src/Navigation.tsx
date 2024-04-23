@@ -14,7 +14,7 @@ const Navigation = ({ className }: { className?: string}) => {
       <div className="resume-label">
         <a href="https://drive.google.com/file/d/1semrwR7UwNuY5-ffkon_9ugfGPyxvHrK/view?usp=sharing" target="_blank" >Resume <Download className="download-icon" fontSize="small" /></a>
       </div>  
-      <a className="section-menu" onClick={handleClick} ><MoreVert fontSize="small" /></a>
+      <a className="section-menu" onClick={handleClick} ><MoreVert fontSize="medium" /></a>
       <NavBar className="navigation-bar-row-menu" />
     </div> 
     { showDropdown && <NavBar className="navigation-bar-column-menu" handleClick={handleClick} /> }  

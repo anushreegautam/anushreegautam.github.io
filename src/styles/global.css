@@ -58,16 +58,10 @@ section {
 p {
   font-size: 1.25rem;
   padding: 10px 0px;
-  font-weight: 300;
 }
 
 li {
-  font-size: 1.25rem; 
-  font-weight: 300;   
-}
-
-strong {
-  font-weight: 600;
+  font-size: 1.25rem;  
 }
 
 .entry-title {
@@ -84,6 +78,11 @@ strong {
 .flex-container-column {
   display: flex;
   flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+  align-items: center;
 }
 
 .experience-container {
@@ -168,6 +167,7 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-bottom: 1px solid dimgray;
   }
   .navigation-bar-column-menu a {
     color: white;  
@@ -185,7 +185,7 @@ strong {
     display: flex;
     flex-direction: row;
     font-weight: 400;
-    font-size: 0.75rem; 
+    font-size: 1rem; 
     
     a:hover {
       color: #5d5a5a;
@@ -258,14 +258,14 @@ strong {
     }
     .resume-label {
       width: 50vw;
-    display: flex;
-    flex-direction: row; 
-    font-weight: 400;
-    font-size: 1rem; 
+      display: flex;
+      flex-direction: row; 
+      font-weight: 400;
+      font-size: 1rem; 
 
-    a:hover {
-      color: #5d5a5a;
-    }
+      a:hover {
+        color: #5d5a5a;
+      }
     }
     .profile-photo {
       border-radius: 2%;

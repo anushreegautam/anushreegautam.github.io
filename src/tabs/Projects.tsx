@@ -12,9 +12,9 @@ const Projects = () => {
             <span className="entry-title">Photogram&nbsp;</span><a href="https://agautam-photogram.netlify.app/" target="_blank"><Launch color="disabled" fontSize="medium"/></a>
           </div>
           <ul>
-            <li>Photogram is a responsive website inspired from Instagram, which has a user feed with an infinite scroll to view photos and the ability to view user profiles.</li>
-            <li>The photos in the user profile can be viewed in grid and list views along with the functionality of lazy loading the photos in both views.</li>
-            <li>This application is developed using ReactJS and Unsplash API</li>
+            <li>Photogram is a responsive website inspired from Instagram, which has a user feed with an <strong>infinite scroll</strong> to view photos and the ability to view user profiles.</li>
+            <li>The photos in the user profile can be viewed in grid and list views along with the functionality of <strong>lazy loading</strong> the photos in both views.</li>
+            <li>This application is developed using <strong>ReactJS</strong> and Unsplash API</li>
           </ul>
           <br/>
           <div className="flex-container-row">
@@ -26,8 +26,8 @@ const Projects = () => {
           </div>
           <br/>
           <ul>
-            <li>TODO is a responsive single page application which allows users to create an account, reset password through email and add, update, reorder and delete tasks.</li>
-            <li>The application is built using MERN stack, webpack, babel and json web tokens are used for user authentication and verifying link for password reset.</li>
+            <li>TODO is a responsive single page application which allows users to <strong>create an account, reset password through email</strong> and <strong>add, update, reorder and delete tasks.</strong></li>
+            <li>The application is built using <strong>MERN stack, webpack, babel</strong> and <strong>json web tokens</strong> are used for <strong>user authentication</strong> and verifying link for <strong>password reset.</strong></li>
           </ul>
         </div>
       </div>
