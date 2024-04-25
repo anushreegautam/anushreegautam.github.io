@@ -13,9 +13,9 @@ const Experience = () => {
         </div>
         <h5>Medidata, Dassault Systèmes</h5>
         <ul>
-          <li>Working on building and managing development of a new microservice under Clinical Trial Management System(CTMS) Domain.</li>  
-          <li><strong>Reviewed UX designs</strong> to ascertain their feasibility for implementation and suggested alternate UX design for requirements.</li>
-          <li>Conducted discussion with the team and defineed <strong>REST API endpoints</strong>.</li>
+          <li>Acting <strong>frontend lead</strong> of a microservice - ensuring process compliance, setting coding standards and collaborating with different stakeholders.</li>  
+          <li>Introduced a new <strong>state management</strong> library <strong>Immerjs</strong> which <strong>reduced code duplication by 10%</strong> and enhanced <strong>code readability.</strong></li>
+          <li>Developed a <strong>bash shell script</strong> to upload cypress test reports to <strong>JFrog Artifactory</strong> integrated it with <strong>Travis build</strong></li>
         </ul>
         <br/>
         <div>
@@ -24,11 +24,11 @@ const Experience = () => {
         </div>
         <h5>Medidata, Dassault Systèmes</h5>
         <ul>
-         <li>Worked on <strong>multiple microservices</strong> required for conducting clinical trials in the CTMS domain.</li>  
-         <li>Improved user landing experience by <strong>reducing the page load time by 50%</strong>.</li>
-         <li>Developed a new endpoint to substitute calling a paginated API call multiple times and delegated the task to the <strong>node BFF layer</strong>.</li>
+         <li>Worked on <strong>multiple microservices</strong> required for conducting clinical trials in the Clinical Trial Management System (CTMS) domain.</li>  
+         <li>Improved user landing experience by moving user authentication to the ExpressJs BFF layer</li>
+         <li>Developed a <strong>REST API</strong> to delegate a task of heavy data loading to the <strong>ExpressJs BFF layer</strong> and <strong>increased the efficiency by 30%</strong>.</li>
          <li>Delivered production fixes for <strong>Rich text editor</strong> to provide <strong>backward compatibility.</strong></li>
-         <li>Explored feasibility with various <strong>open source libraries</strong> and consolidated the learnings under <strong>POCs</strong></li>
+         <li>Investigated various <strong>open source libraries</strong> for <strong>rich text editors</strong>, analyzed their feasibility against project requirements and defined <strong>data structures</strong> for product use cases.</li>
          <li>Translated the Figma designs into efficient user interfaces and optimized the code base by creating reusable components using the <strong>Storybook tool.</strong></li>
         </ul>
       </div>

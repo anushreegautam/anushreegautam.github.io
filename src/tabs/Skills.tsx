@@ -8,7 +8,7 @@ const Skills = () => {
       <br/>
       <div>
         <p><strong>Development</strong>: ReactJS, Typecript, Javascript, Express, Docker, Webpack, Babel, Vite, Redux, MongoDB</p>
-        <p><strong>Testing</strong>: Jest, Cypress, React Testing Library, Chai, Cucumber</p>
+        <p><strong>Testing</strong>: Jest, Cypress, React Testing Library, Chai, Cucumber, Pact</p>
       </div>
       </div>
       </section>
